@@ -1,0 +1,62 @@
+<div>
+  <div class="top">
+   <h3>Candidates Details</h3>
+   
+   <!-- <div class="whole">
+    <a class="space" href="#">Applied</a>
+    <a class="space" href="#">Technical</a>
+    <a class="space" href="#">HR</a>
+    <a class="space" href="#">Selected</a>
+    <a class="space" href="#">Rejected</a>
+   </div> -->
+  </div> 
+  <div>
+    <button routerLink="/add" class="mt-2" style="margin-left:6% ;">Add Employee</button>
+   </div>
+  
+  <div class="container-fluid mt-2">
+    <table class="table table-bordered">
+      <thead class="table-dark ">
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Date Of Birth</th>
+          <th>Gender</th>
+          <th>Mobile</th>
+          <th>Qualification</th>
+          <th>Year of Pass</th>
+          <th>Percentage</th>
+          <th>Experience</th>
+          <th>Addsess</th>
+          <th>Skills</th>
+          <th>Country</th>
+          <th>Status</th>
+          <th>Upload Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor ="let table for getTableData">
+          <td>{{table.fullName}}</td>
+          <td>{{table.emailId}}</td>
+          <td>{{table.dateOfBirth}}</td>
+          <td>{{table.gender}}</td>
+          <td>{{table.phoneNumber}}</td>
+          <td>{{table.higherEducation}}</td>
+          <td>{{table.passOut}}</td>
+          <td>{{table.persentage}}</td>
+          <td>{{table.experience}}</td>
+          <td>{{table.address}}</td>
+          <td>{{table.skills}}</td>
+          <td>{{table.country}}</td>
+          <td>{{table.status}}</td>
+          <td>{{table.uploadDate}}</td>
+          <td>
+            <button class="btn btn-dark btn-sm" (click)="updateUserData(table.emailId)" >Edit</button>
+          </td>
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+ 
+</div>  

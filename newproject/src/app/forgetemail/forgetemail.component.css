@@ -1,0 +1,20 @@
+.uperdiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 10%;
+    border: 5px solid;
+    width: 30%;
+    background-color: #e6e6ff;
+    /* padding-top: 5px; */
+    height: 40vh
+}
+.buton{
+    margin-left: 5px;
+}
+.password{
+    margin-top: 10px;
+}
+.buttion{
+    width: 80px;
+}

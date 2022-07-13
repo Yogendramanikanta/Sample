@@ -1,0 +1,80 @@
+<div class="all">
+  <div class="main">
+   <form class="center" [formGroup]="registrationForm" >
+     <h3 class="heading">Registration</h3>
+     <label for="Name">FullName </label>
+     <input  class="form-control fullname" [(ngModel)]="name" pattern="[a-zA-Z]"  onkeypress='return event.charCode >= 97 && event.charCode <= 122 || event.charCode>=65 && event.charCode<=90 || event.charCode>=32 && event.charCode<=32 ' id="Name" formControlName="name" type="text"  placeholder="Enter your name" >
+     <span *ngIf="(registrationForm.controls['name'].dirty || registrationForm.controls['name'].touched) && registrationForm.hasError('required','name')" class="text text-danger">*Name is required</span>
+     <br>
+     <label for="mail" >Email</label>
+     <input  class="form-control"  [(ngModel)]="mail" id="mail" formControlName="mail" type="email"  placeholder="Enter Your Mail Id">
+     <!-- <span *ngIf="(registrationForm.controls['mail'].dirty || registrationForm.controls['mail'].touched) && registrationForm.hasError('required','mail')" class="text text-danger">*email is required</span> -->
+     <br>
+     <label for="date">Date of Birth</label>
+     <input class="form-control" [(ngModel)]="dob" id="date" formControlName="DOB" type="date">
+     <span *ngIf="(registrationForm.controls['DOB'].dirty || registrationForm.controls['DOB'].touched) && registrationForm.hasError('required','DOB')" class="text text-danger">*Date of birth is required</span>
+     <br>
+     <label for="gender" >Gender
+     
+       <input type="radio" formControlName="gender" [(ngModel)]="gender2" value="male" name="gender"  id="gender" />Male
+       
+       <input type="radio"formControlName="gender" [(ngModel)]="gender2" value="female" name="gender" id="gender1" />Female      
+      </label>
+     <span *ngIf="(registrationForm.controls['gender'].dirty || registrationForm.controls['gender'].touched) && registrationForm.hasError('required','gender')" class="text text-danger">*Gender is required</span>
+     <br>
+     <br>
+     <label for="mobile">Mobile</label>
+     <input class="form-control" [(ngModel)]="mobile" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10" formControlName="mobile" placeholder="eg: 7095-963-795">
+     <span *ngIf="(registrationForm.controls['mobile'].dirty || registrationForm.controls['mobile'].touched) && registrationForm.hasError('required','mobile')" class="text text-danger">*Mobile is required</span>
+     <br>
+     <label>Qualification</label>
+     <select class="form-control" [(ngModel)]="qualification" formControlName="qualification">
+       <option>Degree</option>
+       <option>B.Tech</option>
+       <option>M.Tech</option>
+       <option>MCA</option>
+     </select>
+     <span *ngIf="(registrationForm.controls['qualification'].dirty || registrationForm.controls['qualification'].touched) && registrationForm.hasError('required','qualification')" class="text text-danger">*Qualification is required</span>
+     <br>
+     <label>Year of Pass</label>
+     <input class="form-control"[(ngModel)]="year" type="month" formControlName="year">
+     <span *ngIf="(registrationForm.controls['year'].dirty || registrationForm.controls['year'].touched) && registrationForm.hasError('required','year')" class="text text-danger">*Year of pass is required</span>
+     <br>
+     <label>Percentage</label>
+     <input class="form-control" [(ngModel)]="percent" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 46 && event.charCode <= 46' maxlength="5" formControlName="percent">
+     <span *ngIf="(registrationForm.controls['DOB'].dirty || registrationForm.controls['DOB'].touched) && registrationForm.hasError('required','DOB')" class="text text-danger">*Percentage is required</span>
+     <br>
+     <label>Experience</label>
+     <br>
+     <select class="form-control" [(ngModel)]="experience" formControlName="experience">
+      <option>Fresher</option>
+      <option>1 year</option>
+      <option>2 years</option>
+      <option>3 years</option>
+      <option>More than 3 years</option>
+     </select>
+     <br>
+     <span *ngIf="(registrationForm.controls['DOB'].dirty || registrationForm.controls['DOB'].touched) && registrationForm.hasError('required','DOB')" class="text text-danger">*Experience is required</span>
+     <br>
+     <label>Addsess</label>
+     <textarea class="form-control" [(ngModel)]="address" placeholder="Enter Address Here" id="address" formControlName="address"></textarea>
+     <span *ngIf="(registrationForm.controls['DOB'].dirty || registrationForm.controls['DOB'].touched) && registrationForm.hasError('required','DOB')" class="text text-danger">*Address is required</span>
+     <br>
+     <label>Skills</label>
+     <input class="form-control" [(ngModel)]="skills" type="text" formControlName="address">
+     <span *ngIf="(registrationForm.controls['DOB'].dirty || registrationForm.controls['DOB'].touched) && registrationForm.hasError('required','DOB')" class="text text-danger">*Skills are required</span>
+     <br>
+     <label>Country</label>
+     <input class="form-control" [(ngModel)]="country" type="text" formControlName="address">
+     <span *ngIf="(registrationForm.controls['DOB'].dirty || registrationForm.controls['DOB'].touched) && registrationForm.hasError('required','DOB')" class="text text-danger">*Country is required</span>
+     <br>
+     <div class=buttonss>
+     <button class="btn btn-sm rbut"type="Reset">Reset</button>
+     <button class="btn btn-sm sbut" (click)="adminUpdateUser()" >Submit</button>
+     </div>
+   </form>
+  </div>
+ </div> 
+   
+
+

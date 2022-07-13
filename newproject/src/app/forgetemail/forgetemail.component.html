@@ -1,0 +1,19 @@
+<div class="uperdiv">
+<div class="container-fluid ">
+    <label for="emailid" >EmailId
+    <input type="email" id="emailId" [(ngModel)]="emailId"></label>
+    <button class="btn btn-dark btn-sm rounded buton" type="submit">Submit</button>
+
+</div>
+<div class="password" >
+    <label for="password">Password
+        <input type="password"  [(ngModel)]="password" ></label>
+        <label for="conpassword">Confirm Password
+        <input type="password"  id="conpassword" [(ngModel)]="conpassword">
+    </label>
+    <br>
+    <button class="buttion btn btn-dark btn-sm rounded" type="submit" (click)="putApiMethod()">Submit</button>
+   
+</div>
+</div>
+

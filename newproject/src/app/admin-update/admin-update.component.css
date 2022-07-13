@@ -1,0 +1,35 @@
+.all{
+    background-color: #e6e6ff;
+    height: 80%;
+    width: 40vw;
+    justify-content: center;
+    align-self: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left:30% ;
+
+}
+
+.heading{
+    text-align: center;
+}
+.center{
+    margin: 60px;
+    margin-top: 30px;
+    
+    
+}
+.buttonss{
+   padding-left: 100px;
+    
+}
+.rbut{
+    padding-right: 10px;
+    background-color:#f7cac9;
+    border-color:#8071a8;
+}
+.sbut{
+    padding-left:10px;
+    background-color:#f7cac9;
+    border-color:#8071a8;
+}

@@ -1,0 +1,47 @@
+.all{
+    background-color: #e6e6ff;
+    height: 80%;
+    width: 40vw;
+    justify-content: center;
+    align-self: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left:30% ;
+    box-shadow: 5px 5px 5px 5px;
+
+}
+
+.heading{
+    text-align: center;
+}
+.center{
+    margin: 60px;
+    margin-top: 30px;
+    
+    
+}
+/* .buttonss{
+   padding-left: 100px;
+    
+} */
+.rbut{
+  margin-right: 10px;
+  margin-left: 110px;
+    background-color:black;
+    border-color:grey;
+    color: white;
+    width: 60px;
+
+}
+.sbut{
+    
+    background-color:black;
+    border-color:grey;
+    color: white;
+    width: 60px;
+}
+.fullname{
+    text-transform: capitalize;
+    
+    
+}

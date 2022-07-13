@@ -1,0 +1,18 @@
+.top{
+    color: white;
+    background:#00264d;
+    display: flex;
+    height: 40px;
+    padding-left: 550px;
+
+}
+.whole{
+    margin-left: 300px;
+    padding-top: 5px;
+    
+}
+.space{
+
+    padding: 20px;
+    color: white;
+}

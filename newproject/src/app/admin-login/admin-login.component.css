@@ -1,0 +1,37 @@
+.box{
+    
+    width:23vw;
+    margin-left: 32%;
+    margin-top: 150px;
+    border: 2px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #e6e6ff;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 5px grey;
+    
+
+    
+}
+.heading{
+    text-align: center;
+}
+.mail{
+    width: 300px;
+    border-radius: 5px;
+
+}
+.dd{
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border-width: 3px black ;
+}
+.button{
+  margin-left:120px;
+  margin-top: 5px;
+}
+
+

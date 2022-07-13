@@ -1,0 +1,22 @@
+<div class="box">
+   <h3 class="heading">Register</h3>
+ <form>
+    <label>EmailId</label>
+    <input class="mail" [(ngModel)]="mailId" type="text">
+    <label>Password</label>
+    <input  class="mail" [(ngModel)]="password" type="password">
+    <label>Confirm Password</label>
+    <input class="mail" [(ngModel)]="conPassword" type="password">
+    <label>FullName</label>
+    <input class="mail" [(ngModel)]="fullName" type="text">
+    <label>Mobile</label>
+    <input class="mail" [(ngModel)]="contactNumber"type="number">
+    
+    <select class="dd" [(ngModel)]="role">Role
+    <option>HR</option>
+    <option>Recruiter</option>
+    </select>   
+    <br>
+    <button class="btn btn-dark button" (click)="adminPostApi()">Submit</button>  
+ </form>
+</div>

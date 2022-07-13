@@ -1,0 +1,53 @@
+/* .out{
+    border: #ff9900 solid 3px;
+}
+.fix{
+  height: 8%;
+  width: 1345px;
+  position: fixed;
+  background:#3399ff;
+  
+  /* overflow-x: hidden; */
+  /* padding-top: 20px;
+}
+.gap{
+   
+    margin-left: 80%;
+    
+}
+.admin{                                   
+    margin-right: 10px;
+    background:#ff9900;
+}
+.user{
+    background:#ff9900;
+}
+.pic{
+    height: 100vh;
+    width: 98vw;
+    
+
+} */ 
+.top{
+    width: 100vw;
+    height: 60px;
+    background-color: black;
+    padding: 5px;
+    position: fixed;
+}
+.link{
+    width:500px;
+    color: white;
+    font-size: large;
+    margin-top: 5px;
+}
+.admin{
+    margin-left: 500px;
+    color: white;
+    font-size: large;
+}
+.candi{
+    margin-left: 50px;
+    color: white;
+    font-size: large;
+}
